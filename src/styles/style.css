@@ -1,32 +1,4 @@
-/* animations */
-@keyframes rotate {
-   
-    0% {
-      transform: rotate(0);
-    }
-  
-    100% {
-      transform: rotate(360deg);
-    }
-}
-@keyframes tilt {
-   
-    0% {
-      transform: rotate(0deg);
-    }
-  
-    25% {
-      transform: rotate(-10deg);
-    }
-  
-    75% {
-      transform: rotate(10deg);
-    }
-  
-    100% {
-      transform: rotate(0deg);
-    }
-}
+
 /* geral,imports & variables */
 *{
     margin: 0;
@@ -53,7 +25,7 @@ header{
     background-color: var(--l-dark-purple);
 }
 .logo img{
-    width: 200px;
+    width: 140px;
 }
 .navigation{
     width: 30%;
@@ -64,6 +36,7 @@ header{
     
     color: var(--l-yellow);
     font-size: 1.3rem;
+    position: relative;
 }
 .social-medias{
     width: 10%;
@@ -77,13 +50,80 @@ header{
 .social-medias a, .navigation a{
     transition: .5s;
 }
+.navigation a::after{
+    content: '';
+    width: 0%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-bottom: 2px solid var(--l-yellow);
+    transition: .5s ease-in-out;
+}
 .social-medias a:hover, .navigation a:hover{
     color: white;
 }
+.navigation a:hover::after{
+    width: 100%;
+}
+/* main */
 .first-image-container{
     height: 100vh;
     overflow-y: hidden;
 }
 .first-image-container img{
     width: 100%;
+}
+/* about section*/
+.about{
+    min-height: 100vh;
+    position: relative;
+    background-color: #dbe9fa;
+    padding-bottom: 150px;
+    z-index: -2;/*para funcionar o .plans::after*/
+}
+.about h1{
+    font-size: 4rem;
+    color: var(--l-dark-blue);
+    text-align: center;
+    border-bottom: 2px solid var(--l-dark-purple);
+    margin: 0 4rem 3rem;
+    padding: 15px 0;
+}
+.article-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.article-container p{
+    font-size: 1.4rem;
+    text-align: justify;
+    width: 40%;
+}
+.plans{
+    min-height: 100vh;
+    background-color: #080927;
+    position: relative;
+}
+.plans::after{
+    position: absolute;
+    content: '';
+    background: inherit;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform-origin: bottom right;
+    transform: skewY(5deg);
+    z-index: -1;
+}
+.call-container img{
+    width: 10%;
+    border: 1px solid var(--l-yellow);
+    margin: 20px;
+}
+.plans h2{
+    display: inline;
+    color: #1b559d;
+    font-size: 3rem;
+    text-transform: capitalize;
 }
