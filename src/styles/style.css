@@ -116,6 +116,11 @@ header{
     transform: skewY(5deg);
     z-index: -1;
 }
+.call-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 .call-container img{
     width: 10%;
     border: 1px solid var(--l-yellow);
@@ -126,4 +131,10 @@ header{
     color: #1b559d;
     font-size: 3rem;
     text-transform: capitalize;
+}
+.separate{
+    border: 1px solid white;
+    box-shadow: 2px -1px 6px red;
+    width: 10%;
+    transform: rotateZ(90deg);
 }
