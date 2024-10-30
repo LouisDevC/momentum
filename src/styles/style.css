@@ -1,4 +1,15 @@
-
+/* animação */
+@keyframes led{
+    0%{
+        box-shadow: 2px -1px 10px red;
+    }
+    50%{
+        box-shadow: 0px 0px 0px red;
+    }
+    100%{
+        box-shadow: 2px -1px 10px red;
+    }
+}
 /* geral,imports & variables */
 *{
     margin: 0;
@@ -134,7 +145,15 @@ header{
 }
 .separate{
     border: 1px solid white;
-    box-shadow: 2px -1px 6px red;
+    /* box-shadow: 2px -1px 10px red; */
+    animation: led 2s ease-in-out infinite;
     width: 10%;
     transform: rotateZ(90deg);
+}
+.destaque{
+    color: var(--l-red);
+}
+.video-container video{
+    width: 400px;
+    height: 200px;
 }
