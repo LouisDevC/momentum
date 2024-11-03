@@ -1,0 +1,127 @@
+/* animação */
+@keyframes led{
+    0%{
+        box-shadow: 2px -1px 10px red;
+    }
+    50%{
+        box-shadow: 0px 0px 0px red;
+    }
+    100%{
+        box-shadow: 2px -1px 10px red;
+    }
+}
+/* geral,imports & variables */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --l-yellow: #e0a52c;
+    --l-blue: #1b559d;
+    --l-dark-blue: #002237;
+    --l-red: #ff0000;
+    --l-pink: #cf7142;
+    --l-dark-purple: #080927;
+}
+a{
+    text-decoration: none;
+}
+/* header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px 0 5px;
+    background-color: var(--l-dark-purple);
+}
+.logo img{
+    width: 140px;
+}
+.navigation{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.navigation a{
+    
+    color: var(--l-yellow);
+    font-size: 1.3rem;
+    position: relative;
+}
+.social-medias{
+    width: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.3rem;
+}
+.social-medias a{
+    color: var(--l-yellow);
+}
+.social-medias a, .navigation a{
+    transition: .5s;
+}
+.navigation a::after{
+    content: '';
+    width: 0%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-bottom: 2px solid var(--l-yellow);
+    transition: .5s ease-in-out;
+}
+.social-medias a:hover, .navigation a:hover{
+    color: white;
+}
+.navigation a:hover::after{
+    width: 100%;
+}
+footer{
+    min-height: 20vh;
+    background-color: var(--l-dark-blue);
+    border-top: 5px groove var(--l-yellow);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+footer a{
+    text-decoration: none;
+}
+footer nav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 50px 0;
+    perspective: 1000px;
+}
+footer a{
+    color: var(--l-yellow);
+}
+footer a:hover{
+    color: #dfab43;
+}
+footer nav a{
+    background-color: var(--l-yellow);
+    border-radius: 50%;
+    padding: 10px;
+    color: var(--l-dark-blue);
+    transition:transform .3s ease;
+}
+
+footer nav a:hover{
+    transform: scale(1.2);
+    /* translate: 10px; */
+    background-color: var(--l-blue);
+    color: var(--l-yellow);
+    box-shadow: -5px -5px 7px rgba(0, 0, 0, 0.521);
+}
+footer nav i{
+    font-size: 2.5rem;
+}
+footer p{
+    color:  white;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
