@@ -1,4 +1,8 @@
 /* animação */
+@font-face {
+    font-family: 'pjt fonte';
+    src: url(../fonts/ChakraPetch-Regular.ttf);
+}
 @keyframes led{
     0%{
         box-shadow: 2px -1px 10px red;
@@ -15,6 +19,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'pjt fonte';
 }
 :root{
     --l-yellow: #e0a52c;

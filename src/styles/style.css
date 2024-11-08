@@ -63,7 +63,7 @@
     display: inline;
     color: #1b559d;
     font-size: 3rem;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 .separate{
     border: 1px solid white;
