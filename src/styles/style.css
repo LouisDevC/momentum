@@ -32,6 +32,13 @@
     text-align: justify;
     width: 40%;
 }
+.article-container img{
+    width: 30%;
+    height: 15%;
+    border-radius: 2rem;
+    box-shadow: 4px 4px 5px rgba(128, 128, 128, 0.582);
+    filter: drop-shadow(100%);
+}
 .plans{
     min-height: 100vh;
     background-color: #080927;

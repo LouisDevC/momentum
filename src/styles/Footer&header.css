@@ -84,49 +84,21 @@ header{
 footer{
     min-height: 20vh;
     background-color: var(--l-dark-blue);
-    border-top: 5px groove var(--l-yellow);
-
+    padding: 35px 35px 10px 35px;
+}
+.footer-topics{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
 }
-footer a{
-    text-decoration: none;
-}
-footer nav{
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    padding: 50px 0;
-    perspective: 1000px;
-}
-footer a{
-    color: var(--l-yellow);
-}
-footer a:hover{
-    color: #dfab43;
-}
-footer nav a{
-    background-color: var(--l-yellow);
-    border-radius: 50%;
+.footer-topics h3{
+    color: var(--l-red);
+    margin-bottom: 15px;
     padding: 10px;
-    color: var(--l-dark-blue);
-    transition:transform .3s ease;
-}
-
-footer nav a:hover{
-    transform: scale(1.2);
-    /* translate: 10px; */
-    background-color: var(--l-blue);
-    color: var(--l-yellow);
-    box-shadow: -5px -5px 7px rgba(0, 0, 0, 0.521);
-}
-footer nav i{
-    font-size: 2.5rem;
+    letter-spacing: 5px;
+    border-left: 1px solid var(--l-yellow);
+    text-align: center;
+    border-radius: 50%;
 }
 footer p{
-    color:  white;
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+    color: white;
+    text-align: center;
 }
