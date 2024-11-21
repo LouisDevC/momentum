@@ -22,6 +22,9 @@
     margin: 0 4rem 3rem;
     padding: 15px 0;
 }
+.momentum-color{
+    color: var(--l-red);
+}
 .article-container{
     display: flex;
     justify-content: space-around;

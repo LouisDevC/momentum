@@ -81,24 +81,57 @@ header{
 .navigation a:hover::after{
     width: 100%;
 }
-footer{
-    min-height: 20vh;
+.footer {
     background-color: var(--l-dark-blue);
-    padding: 35px 35px 10px 35px;
-}
-.footer-topics{
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    font-weight: lighter;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-}
-.footer-topics h3{
-    color: var(--l-red);
-    margin-bottom: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .footer-column {
+    flex: 1;
     padding: 10px;
-    letter-spacing: 5px;
-    border-left: 1px solid var(--l-yellow);
-    text-align: center;
-    border-radius: 50%;
-}
-footer p{
-    color: white;
-    text-align: center;
-}
+  }
+  
+  .footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #f39c12;
+  }
+  
+  .footer-column p,
+  .footer-column a {
+    color: #bdc3c7;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  .footer-column a:hover {
+    color: #f39c12;
+  }
+  
+  .footer-bottom {
+    padding: 10px 0;
+    border-top: 1px solid #34495e;
+    margin-top: 20px;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+  

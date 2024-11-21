@@ -15,7 +15,9 @@
 <body>
     <header>
         <div class="logo">
-            <img src="src/img/LOGO 1.png" alt="logo da momentum - empresa de criação de conteúdo">
+            <a href="index.html">
+                <img src="src/img/LOGO 1.png" alt="logo da momentum - empresa de criação de conteúdo">
+            </a>
         </div>
         <nav class="navigation">
             <a href="index.html">Home</a>
@@ -23,10 +25,10 @@
             <a href="src/pages/contact.html">Contato</a>
         </nav>
         <div class="social-medias">
-            <a href="https://www.instagram.com/momentum_midia/">
+            <a href="https://www.instagram.com/momentum_midia/" target="_blank">
                 <i class="fab fa-instagram" aria-hidden="true"></i>
             </a>
-            <a href="#">
+            <a href="https://www.tiktok.com/@momentum_midia" target="_blank">
                 <i class="fab fa-tiktok" aria-hidden="true"></i>
             </a>
             <a id="card">
@@ -39,7 +41,7 @@
             <img src="src/img/Prancheta 1.png" alt="momentum logo, seguida de uma imagem de câmera">
         </div>
         <section class="about">
-            <h1>Viva o momento!</h1>
+            <h1>Viva o <span class="momentum-color">"momentum"!</span></h1>
             <article class="article-container">
                 <p>Com a paixão pela experiência em produção de vídeos, nós transformamos ideias em histórias visuais impactantes para empresas de todos os tipos. Nossa abordagem carismática e atenção aos detalhes garantem conteúdos memoráveis, abraçando o ideal de nossos clientes. Nós valorizamos o profissionalismo e construimos confiança com transparência e resultados de alta qualidade. Nos permita levar sua mensagem ao próximo nível, combinando talento, tecnologia e um toque pessoal.</p>
                 <img src="src/img/IMG_3627.jpg" alt="Rodrigo, o criador a momentum">
@@ -76,30 +78,45 @@
             </article>
         </section>
     </main>
-    <footer>
-        <div class="footer-topics">
-            <nav>
-                <h3>Empresa</h3>
-                <ul>
-                    <li>
-                        <a href="#">Sobre</a>
-                    </li>
-                    <li>
-                        <a href="src/pages/terms.html">termos de serviço</a>
-                    </li>
-                    <li>
-                        <a href="src/pages/contact.html"></a>
-                    </li>
-                    <li>
-                        <a id="card">
-                            <i class="far fa-address-card" aria-hidden="true">card</i>
-                        </a>
-                    </li>
-                    <li></li>
-                </ul>
-            </nav>
-        </div>
-        <p>desenvolvido por <a href="">Dev Louis_C</a></p>
-    </footer>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-row"> 
+                <div class="footer-column"> 
+                    <h3>Contatos</h3>
+                    <p>Ig: @momentum_midia</p>
+                    <p>Telefone: (64) 99283-9447
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                    </p>
+                    <p>Email: momentum.mida@gmail.com</p>
+                </div> <div class="footer-column">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li>
+                            <a href="src/pages/about.html">Sobre Nós</a>
+                        </li>
+                        <li>
+                            <a href="">Serviços</a>
+                        </li>
+                        <li>
+                            <a href="#">Política de Privacidade</a>
+                        </li>
+                        <li>
+                            <a href="#">Termos de Uso</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Redes Sociais</h3>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>desenvolvido por <a href="">Dev Louis_C</a></p>
+                <p>&copy; 2024 Momentum. Todos os direitos reservados.</p>
+            </div>
+        </footer>
 </body>
 </html>
