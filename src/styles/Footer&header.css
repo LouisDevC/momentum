@@ -134,4 +134,7 @@ header{
   .footer-bottom p {
     margin: 0;
   }
-  
+  .artist{
+    text-decoration: none;
+    color: var(--l-yellow);
+  }
