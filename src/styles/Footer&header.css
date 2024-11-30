@@ -59,6 +59,7 @@ header{
     display: flex;
     justify-content: space-evenly;
     font-size: 1.3rem;
+    transition: 1s ease-in-out;
 }
 .social-medias a{
     color: var(--l-yellow);
