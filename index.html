@@ -11,8 +11,9 @@
     <link rel="shortcut icon" href="src/img/favicon/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="src/styles/style.css">
     <link rel="stylesheet" href="src/styles/Footer&header.css">
+    <script src="src/scripts/openModal.js" defer></script>
 </head>
-<body>
+<body id="body-container">
     <header>
         <div class="logo">
             <a href="index.html">
@@ -31,9 +32,46 @@
             <a href="https://www.tiktok.com/@momentum_midia" target="_blank">
                 <i class="fab fa-tiktok" aria-hidden="true"></i>
             </a>
-            <a id="card">
+            <a id="card-btn">
                 <i class="far fa-address-card" aria-hidden="true"></i>
             </a>
+            <div class="card-container hide">
+                <div class="card">
+                    <button id="close-btn" class="close-btn" aria-label="botão de fechar modal">x</button>
+                    <div class="card-info">
+                        <ul>
+                            <li>
+                                <span class="card-name">nome:</span>
+                                <p>Rodrigo dos santos</p>
+                                <span class="card-name">sobrenome:</span>
+                                <p>de oliveira</p>
+                            </li>
+                            <li>
+                                <span class="card-name">contato:</span>
+                                <p>(64) 99283-9447</p>
+                            </li>
+                            <li>
+                                <span class="card-name">email:</span>
+                                <p>momentum.mida@gmail.com</p>
+                            </li>
+                            <li>
+                                <span class="card-name">cargo:</span>
+                                <p>video-maker</p>
+                            </li>
+                            <li>
+                                <a href="https://w.app/dDq45j" class="whats-link">
+                                    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                                    <p>clique para entrar em contato!</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-image">
+                        <img src="src/img/fotoeditada.png" alt="Rodrigo - proprietário e video-maker da momentum mídia">
+                        <img src="src/img/qr.png" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <main>
