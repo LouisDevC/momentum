@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- meus links -->
     <link rel="shortcut icon" href="../img/favicon/favicon-32x32.png" type="image/x-icon">
-    <link rel="stylesheet" href="../styles/Footer&header.css">
+    <link rel="stylesheet" href="../styles/styles.min/Footer&header.min.css">
+    <link rel="stylesheet" href="../scripts/about.css">
 </head>
 <body>
     <header>
@@ -33,21 +34,77 @@
             </a>
         </div>
     </header>
-    <main style="min-height: 100vh;">
-
+    <main>
+        <section class="opening">
+            <article class="opening-video" id="return">
+                <video src="../videos/momentum.mp4" autoplay muted loop></video>
+                <div class="access">
+                    <div class="access-text">
+                        <h1>Vídeos que contam histórias, momentos que permanecem para sempre.</h1>
+                    </div>
+                    <a href="#about-text">momentum mídia</a>
+                </div>
+                <article class="about-me" id="about-text">
+                    <div class="mvv">
+                        <h2>nossa missão:</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum nihil, molestias nisi earum quisquam animi unde molestiae corporis voluptates aut sapiente id harum, sunt, deserunt commodi possimus facilis in aspernatur.</p>
+                        <h2>nossa visão:</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, culpa. Repudiandae est nihil doloremque expedita, esse, quis culpa illum mollitia iusto corporis aliquid nobis nemo in velit quam numquam alias.</p>
+                        <h2>nossos valores:</h2>
+                        <ul>
+                            <li>criatividade</li>
+                            <li>cordialidade</li>
+                            <li>inovação</li>
+                            <li>empreendedorismo</li>
+                            <li>valorizar os momentos</li>
+                        </ul>
+                    </div>
+                    <aside class="our-history">
+                        <img src="../img/LOGO 1.png" alt="logo momentum">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quam velit sequi debitis repudiandae autem illum consectetur placeat! Illo, iure soluta iusto reprehenderit beatae aspernatur veritatis excepturi laborum eum quaerat illum deserunt repudiandae maiores! Vel cum, enim nesciunt soluta perferendis quis similique. Accusantium pariatur possimus hic quod praesentium aliquam modi?</p>
+                        <a href="#return"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+                    </aside>
+                </article>
+            </article>
+        </section>
     </main>
-    <footer>
-        <nav>
-            <a href="">
-                <i class="fa fa-address-book" aria-hidden="true">
-                </i>
-            </a>
-            <a href=""><i class="fa fa-pen" aria-hidden="true"></i></a>
-            <a href="">
-                <i class="fa fa-lock" aria-hidden="true"></i>
-            </a>
-        </nav>
-        <p>desenvolvido por <a href="">Dev Louis_C</a></p>
-    </footer>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-row"> 
+                <div class="footer-column"> 
+                    <h3>Contatos</h3>
+                    <p>Ig: @momentum_midia</p>
+                    <p>Telefone: (64) 99283-9447
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                    </p>
+                    <p>Email: momentum.mida@gmail.com</p>
+                </div> <div class="footer-column">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li>
+                            <a href="src/pages/about.html">Sobre Nós</a>
+                        </li>
+                        <li>
+                            <a href="">Serviços</a>
+                        </li>
+                        <li>
+                            <a href="src/pages/useTerms.html">Termos de Uso</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Redes Sociais</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">TikTok</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>desenvolvido por <a href="">Dev Louis_C</a></p>
+                <p>&copy; 2024 Momentum. Todos os direitos reservados.</p>
+            </div>
+        </footer>
 </body>
 </html>
