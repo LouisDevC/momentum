@@ -1,0 +1,24 @@
+@media only screen and (max-width: 992px) {
+    .navigation, .social-medias{
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.863);
+        height: 100dvh;
+        align-items: center;
+    }
+    .navigation{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50dvw;
+    }
+    .social-medias{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50dvw;
+    }
+    .mobile-menu{
+        right: 71px;
+    }
+}
