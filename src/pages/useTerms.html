@@ -10,28 +10,67 @@
     <link rel="shortcut icon" href="../img/favicon/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="../styles/styles.min/Footer&header.min.css">
     <link rel="stylesheet" href="../styles/styles.min/terms.min.css">
+    <link rel="stylesheet" href="../styles/styles.min/style.min.css">
+    <link rel="stylesheet" href="../styles/mobile.min.css">
+    <link rel="stylesheet" href="../styles/styles.min/mobile-terms.min.css">
+    <!-- meu script -->
+     <script src="../scripts/scripts.min/mobileMenuOpen.js" defer></script>
+     <script src="../scripts/scripts.min/openModal.min.js" defer></script>
 </head>
 <body>
-    <header>
+    <header tabindex="0" aria-label="cabeçalho - links rápidos, redes sociais">
         <div class="logo">
-            <a href="../../index.html">
-                <img src="../../src/img/LOGO 1.png" alt="logo da momentum - empresa de criação de conteúdo">
-            </a>
-        </div>
+           <a href="../../index.html" aria-label="página home no logotipo" aria-current="page"><img src="../img/LOGO 1.png" alt="logo da momentum" title="empresa de criação de conteúdo"></a>
+       </div>
         <nav class="navigation">
-            <a href="../../index.html">Home</a>
-            <a href="about.html">Sobre nós</a>
-            <a href="contact.html">Contato</a>
-        </nav>
+              <a href="../../index.html" aria-current="page">Home</a>
+              <a href="about.html">Sobre nós</a>
+              <a href="#contact">Contato</a>
+       </nav>
         <div class="social-medias">
-            <a href="https://www.instagram.com/momentum_midia/" target="_blank">
-                <i class="fab fa-instagram" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.tiktok.com/@momentum_midia" target="_blank">
-                <i class="fab fa-tiktok" aria-hidden="true"></i>
-            </a>
+           <a href="https://www.instagram.com/momentum_midia/" target="_blank" aria-label="ir para o Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+           <a href="https://www.tiktok.com/@momentum_midia" target="_blank" aria-label="ir para o tiktok"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+           <a id="card-btn" tabindex="0" role="button" aria-label="card de contato - videomaker rodrigo"><i class="far fa-address-card" aria-hidden="true"></i></a>
+           <div class="card-container hide">
+              <div class="card">
+                 <button id="close-btn" class="close-btn" aria-label="botão de fechar modal">x</button>
+                 <div class="card-info">
+                    <ul>
+                       <li>
+                          <span class="card-name">nome:</span>
+                          <p>Rodrigo dos santos</p>
+                          <span class="card-name">sobrenome:</span>
+                          <p>de oliveira</p>
+                       </li>
+                       <li>
+                          <span class="card-name">contato:</span>
+                          <p>(64) 99283-9447</p>
+                       </li>
+                       <li>
+                          <span class="card-name">email:</span>
+                          <p>momentum.mida@gmail.com</p>
+                       </li>
+                       <li>
+                          <span class="card-name">cargo:</span>
+                          <p>video-maker</p>
+                       </li>
+                       <li>
+                          <a href="https://w.app/dDq45j" class="whats-link">
+                             <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                             <p>clique para entrar em contato!</p>
+                          </a>
+                       </li>
+                    </ul>
+                 </div>
+                 <div class="card-image">
+                    <img src="../img/perfil.png" alt="Rodrigo - proprietário e video-maker da momentum mídia">
+                    <img src="../img/qr.png" alt="qr code de contato do rodrigo" title="qr code- aponte a câmera do celular">
+                 </div>
+              </div>
+           </div>
         </div>
-    </header>
+        <div><i class="fa-solid fa-bars mobile-menu" id="mobile-menu"></i></div>
+     </header>
     <main>
         <ol>
             <li>
@@ -83,7 +122,7 @@
             </li>
         </ol>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contact">
         <div class="footer-container">
             <div class="footer-row"> 
                 <div class="footer-column"> 
