@@ -10,30 +10,30 @@
     <!-- meus links -->
     <link rel="shortcut icon" href="../img/favicon/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="../styles/styles.min/Footer&header.min.css">
+    <link rel="stylesheet" href="../styles/mobile.min.css">
     <link rel="stylesheet" href="../scripts/about.css">
+    <!-- meus scripts -->
+     <script src="../scripts/scripts.min/mobileMenuOpen.js" defer></script>
 </head>
 <body>
-    <header>
+    <header tabindex="0" aria-label="cabeçalho - links rápidos, redes sociais">
         <div class="logo">
-            <img src="../img/LOGO 1.png" alt="logo da momentum - empresa de criação de conteúdo">
-        </div>
+           <a href="../../index.html" aria-label="página home no logotipo" aria-current="page"><img src="../img/LOGO 1.png" alt="logo da momentum" title="empresa de criação de conteúdo"></a>
+       </div>
         <nav class="navigation">
-            <a href="../../index.html">Home</a>
-            <a href="about.html">Sobre nós</a>
-            <a href="contact.html">Contato</a>
-        </nav>
+              <a href="../../index.html" aria-current="page">Home</a>
+              <a href="about.html">Sobre nós</a>
+              <a href="#contact">Contato</a>
+       </nav>
         <div class="social-medias">
-            <a href="#">
-                <i class="fab fa-instagram" aria-hidden="true"></i>
-            </a>
-            <a href="#">
-                <i class="fab fa-tiktok" aria-hidden="true"></i>
-            </a>
-            <a href="">
-                <i class="far fa-address-card" aria-hidden="true"></i>
-            </a>
+           <a href="https://www.instagram.com/momentum_midia/" target="_blank" aria-label="ir para o Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+           <a href="https://www.tiktok.com/@momentum_midia" target="_blank" aria-label="ir para o tiktok"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+                 </div>
+              </div>
+           </div>
         </div>
-    </header>
+        <div><i class="fa-solid fa-bars mobile-menu" id="mobile-menu"></i></div>
+     </header>
     <main>
         <section class="opening">
             <article class="opening-video" id="return">
@@ -47,28 +47,28 @@
                 <article class="about-me" id="about-text">
                     <div class="mvv">
                         <h2>nossa missão:</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum nihil, molestias nisi earum quisquam animi unde molestiae corporis voluptates aut sapiente id harum, sunt, deserunt commodi possimus facilis in aspernatur.</p>
+                        <p>Oferecer produtos audiovisuais de alta qualidade, que não apenas encantem visualmente, mas construam valor real para os negócios, através de um atendimento de confiança, e um relacionamento de longo prazo.</p>
                         <h2>nossa visão:</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, culpa. Repudiandae est nihil doloremque expedita, esse, quis culpa illum mollitia iusto corporis aliquid nobis nemo in velit quam numquam alias.</p>
+                        <p>ser reconhecidos como a empresa líder no mercado audiovisual, destacando-se pela qualidade, inovação e confiança, tornando-se os parceiros essenciais de empresas que buscam se posicionar com força, autenticidade, e resultados no mundo digital.</p>
                         <h2>nossos valores:</h2>
                         <ul>
-                            <li>criatividade</li>
-                            <li>cordialidade</li>
-                            <li>inovação</li>
-                            <li>empreendedorismo</li>
-                            <li>valorizar os momentos</li>
+                            <li>excelência</li>
+                            <li>confiança e relacionamento</li>
+                            <li>agilidade com qualidade</li>
+                            <li>inovação contínua</li>
+                            <li>foco no cliente</li>
                         </ul>
                     </div>
                     <aside class="our-history">
                         <img src="../img/LOGO 1.png" alt="logo momentum">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quam velit sequi debitis repudiandae autem illum consectetur placeat! Illo, iure soluta iusto reprehenderit beatae aspernatur veritatis excepturi laborum eum quaerat illum deserunt repudiandae maiores! Vel cum, enim nesciunt soluta perferendis quis similique. Accusantium pariatur possimus hic quod praesentium aliquam modi?</p>
+                        <p>na momentum midia, acreditamos que um bom vídeo não apenas conta uma história, mas impulsiona resultados e transforma negócios. somos uma empresa especializada na produção de vídeos profissionais, com qualidade excepcional e um atendimento proximo, transparente e dedicado. nosso diferencial está em entender a essência de cada cliente, criando soluções personalizadas que comunicam com impacto e ajudam sua marca a se destacar no mercado.</p>
                         <a href="#return"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
                     </aside>
                 </article>
             </article>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contact">
         <div class="footer-container">
             <div class="footer-row"> 
                 <div class="footer-column"> 
