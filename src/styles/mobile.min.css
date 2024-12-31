@@ -113,7 +113,7 @@
         align-items: center;
         gap: 20px;
         flex-wrap: wrap;
-        padding: 0 1rem;
+        padding:  1rem;
     }
     .about-me .our-history{
         width: 100dvw;
